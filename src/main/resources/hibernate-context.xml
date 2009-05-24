@@ -9,6 +9,7 @@
 		<property name="hibernateProperties">
 			<value>
 				<![CDATA[
+                hibernate.hbm2ddl.auto=create-drop
 			hibernate.show_sql=true
 			hibernate.format_sql=true
 			]]>

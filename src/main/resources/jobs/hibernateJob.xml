@@ -21,6 +21,9 @@
     <beans:bean id="fileItemReader" scope="step"
 		class="org.springframework.batch.item.file.FlatFileItemReader">
         <beans:property name="resource" value="classpath:#{jobParameters[file]}"/>
+        <beans:property name="lineMapper">
+            <beans:bean class="ru.net.romikk.sandbox.PlayerLineMapper" />
+        </beans:property>
     </beans:bean>
 
     <beans:bean id="hibernateWriter"

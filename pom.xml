@@ -8,6 +8,14 @@
   <name>spring-batch-sandbox</name>
   <url>http://maven.apache.org</url>
   <build>
+      <resources>
+          <resource>
+              <directory>src/main/java</directory>
+              <includes>
+                  <include>**/*.xml</include>
+              </includes>
+          </resource>
+      </resources>
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -50,11 +58,6 @@
             </exclusions>
         </dependency>
     <dependency>
-            <groupId>org.apache.derby</groupId>
-            <artifactId>derby</artifactId>
-            <version>10.4.2.0</version>
-        </dependency>
-    <dependency>
             <groupId>geronimo-spec</groupId>
             <artifactId>geronimo-spec-jta</artifactId>
             <version>1.0.1B-rc4</version>
@@ -79,6 +82,12 @@
             <artifactId>spring-orm</artifactId>
             <version>2.5.6</version>
         </dependency>
+    <dependency>
+            <groupId>hsqldb</groupId>
+            <artifactId>hsqldb</artifactId>
+            <version>1.8.0.7</version>
+        </dependency>
+    
     
   </dependencies>
 </project>

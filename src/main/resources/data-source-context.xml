@@ -5,7 +5,7 @@
 	http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.0.xsd">
 
 	<!--  Initialise the database before every test case: -->
-	<import resource="data-source-context-init.xml" />
+<!--	<import resource="data-source-context-init.xml" /> -->
 
 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
 		<property name="driverClassName" value="${batch.jdbc.driver}" />
@@ -21,7 +21,7 @@
 	<!-- Set up or detect a System property called "org.springframework.batch.support.SystemPropertyInitializer.ENVIRONMENT" used to construct a properties file on the classpath.  The default is "hsql".  -->
 	<bean id="environment"
 		class="org.springframework.batch.support.SystemPropertyInitializer">
-		<property name="defaultValue" value="derby"/>
+		<property name="defaultValue" value="hsql"/>
 	</bean>
 
 	<!--  Use this to set additional properties on beans at run time -->

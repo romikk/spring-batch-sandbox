@@ -20,7 +20,7 @@ import java.io.Serializable;
 
 public class Player implements Serializable {
 	
-	private String id; 
+	private Long id;
 	private String lastName; 
 	private String firstName; 
 	private String position; 
@@ -35,7 +35,7 @@ public class Player implements Serializable {
 		debutYear;
 	}
 	
-	public String getId() {
+	public Long getId() {
 		return id;
 	}
 	public String getLastName() {
@@ -53,7 +53,7 @@ public class Player implements Serializable {
 	public int getDebutYear() {
 		return debutYear;
 	}
-	public void setId(String id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 	public void setLastName(String lastName) {

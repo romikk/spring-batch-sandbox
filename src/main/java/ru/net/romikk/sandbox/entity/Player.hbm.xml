@@ -7,10 +7,10 @@
 	<class name="ru.net.romikk.sandbox.entity.Player"
 		table="PLAYERS">
 		<id name="id" column="player_id">
-			<generator class="native" />
+			<generator class="increment" />
 		</id>
-		<property name="lastname" column="last_name" />
-		<property name="firstname" column="first_name" />
+		<property name="lastName" column="last_name" />
+		<property name="firstName" column="first_name" />
 		<property name="position" column="pos" />
 		<property name="birthYear" column="YEAR_OF_BIRTH" />
 		<property name="debutYear" column="YEAR_DRAFTED" />
