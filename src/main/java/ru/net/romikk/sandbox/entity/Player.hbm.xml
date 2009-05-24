@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="ru.net.romikk.sandbox.entity.Player"
+		table="PLAYERS">
+		<id name="id" column="player_id">
+			<generator class="native" />
+		</id>
+		<property name="lastname" column="last_name" />
+		<property name="firstname" column="first_name" />
+		<property name="position" column="pos" />
+		<property name="birthYear" column="YEAR_OF_BIRTH" />
+		<property name="debutYear" column="YEAR_DRAFTED" />
+	</class>
+
+</hibernate-mapping>
